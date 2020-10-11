@@ -118,12 +118,13 @@ function createTrials(data, tabletop) {
   timeline.push(audio_test);
 
   var wait_to_start = {
-    type: "fullscreen",
-    // fullscreen_mode: false,
-    message: "When are you ready to start...",
-    button_label: "Click Here",
-    delay_after: 250
-  }
+    type: "html-keyboard-response",
+     // fullscreen_mode: false,
+     choices:['space'],
+     prompt: "<br><br><br><br><br><br><br><br><p style='font-size:30px;'> When you are ready, press the space bar to begin.</br> </p>"
+   }
+
+
 
   timeline.push(wait_to_start);
 
