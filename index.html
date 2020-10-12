@@ -145,16 +145,16 @@ function createTrials(data, tabletop) {
 
     var lwl_iti = {
       type:'html-keyboard-response',
-      stimulus: "Trial: "+i.toString(),
+      stimulus: "<p style='font-size:90px;'>"+i.toString()+"</p>",
       choices: jsPsych.NO_KEYS,
-      trial_duration: 50
+      trial_duration: 500
     }
 
     timeline.push(lwl_iti)
 
     var lwl_trial = {
       type: 'audio-button-response-flexiblelocations',
-      trial_duration: 4702,
+      trial_duration: 6700,
       response_ends_trial: false,
       // response_ends_trial: true,
       margin_top: ['0px','0px'],
