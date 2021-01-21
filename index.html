@@ -112,7 +112,7 @@ function createTrials(data, tabletop) {
     type: "audio-keyboard-response",
     stimulus:"stimuli/sounds/audio_check.wav",
     choices:['space'],
-    prompt: "<br><br><br><br><p style='font-size:30px;'> Please adjust the volume on your computer <br> so that your child can comfortably hear the sounds being played. <br> Sounds should be as loud as a person's voice in the room. <br><br><br> Please tell the experimenter when you are ready.</br> </p>"
+    prompt: "<br><br><br><br><br><br><br><br><p style='font-size:30px;'> Please adjust the volume on your computer <br> so that your child can comfortably hear the sounds being played. <br> Sounds should be as loud as a person's voice in the room. <br><br><br> Please tell the experimenter when you are ready.</br> </p>"
   }
 
   timeline.push(audio_test);
@@ -121,7 +121,7 @@ function createTrials(data, tabletop) {
     type: "html-keyboard-response",
     // fullscreen_mode: false,
     choices:['space'],
-    stimulus: "<br><br><br><br><br><br><p style='font-size:30px;'> When you are ready, press the space bar to begin.</br> </p>"
+    stimulus: "<br><br><br><br><br><br><br><br><p style='font-size:30px;'> When you are ready, press the space bar to begin.</br> </p>"
   }
 
   timeline.push(wait_to_start);
